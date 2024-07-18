@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/utility.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <div class="home m-1 rounded bg-grey p-2">
+                <div class="logo invert"><img src="icons/logo.svg" alt=""></div>
+                <ul>
+                    <li class="opacity-1"><img class="invert opacity-1" src="icons/home.svg  " alt="home">Home</li>
+                    <li class="opacity-1"><img class="invert opacity-1" src="icons/search.svg  " alt="search">Search</li>
+                </ul>
+            </div>
+            <div class="library m-1 rounded bg-grey">
+                <div class="heading">
+                    <img class="playlist invert opacity-1" src="icons/playlist.svg  " alt="playlist">
+                    <h3 class="opacity-1">
+                        Your Library
+                    </h3>
+                </div>
+                <div class="songLists">
+                    <ul class="li-styling">
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="right  bg-grey">
+            <div class="header">
+                <div class="nav">
+                    <i id="menubar" class="fa-solid fa-bars"></i>
+
+                    <i class="fa-solid fa-angle-left"></i>
+                    <i class="fa-solid fa-angle-right"></i>
+                </div>
+                <div class="buttons">
+                    <button class="signup-btn">
+                        Sign Up
+                    </button>
+                    <button class="login-btn">
+                        Log In
+                    </button>
+                </div>
+
+            </div>
+            <div class="spotifyPlaylists">
+                <h3>Spotify Playlists</h3>
+                <div class="cardContainer ">
+
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="playbar">
+
+            <div class="played-song">
+                <ul>
+
+                </ul>
+            </div>
+            <div class="scroll-area">
+                <div class="songs-button">
+                    <div id="previous"><i class="fa-solid fa-backward-step"></i></div>
+                    <div id="play"><i class="fa-solid fa-circle-play"></i></div>
+                    <div id="next"><i class="fa-solid fa-forward-step"></i></div>
+                </div>
+                <div class="song-time">
+                    <div class="start-time"></div>
+                    <div class="seekbar">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="end-time"></div>
+                </div>
+            </div>
+            <div class="volume-button">
+                <div class="volume-high">
+                    <div>
+                    <i class="fa-solid fa-volume-high"></i></div>
+                    <div class="range">
+                    <input type="range" name="volume" id="volume" class="range-input" value="100"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
