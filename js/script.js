@@ -144,7 +144,7 @@ const playMusic = (track, pause = false) => {
         document.getElementById("play").innerHTML = `<i class="btn-pause fa-solid fa-pause"></i>`;
     }
 
-    document.querySelector(".played-song").innerHTML = decodeURI(track);
+    document.querySelector(".played-song").innerHTML = decodeURI(track).replace('.mp3', '');
     document.querySelector(".start-time").innerHTML = "00:00";
     document.querySelector(".end-time").innerHTML = "00:00";
 
