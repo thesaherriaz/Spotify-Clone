@@ -43,7 +43,7 @@ function handleTabletChange(e) {
 
 async function getSongs(folder) {
     currFolder = folder;
-    let a = await fetch(`http://127.0.0.1:5501/${folder}/`);
+    let a = await fetch(`http://127.0.0.1:5502/${folder}/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -80,7 +80,7 @@ async function getSongs(folder) {
 }
 
 async function displayAlbums() {
-    let a = await fetch(`http://127.0.0.1:5501/songs/`);
+    let a = await fetch(`http://127.0.0.1:5502/songs/`);
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
@@ -92,7 +92,7 @@ async function displayAlbums() {
         const e = array[index];
         if (e.href.includes("/songs/")) {
             let folder = e.href.split("/").slice(-1)[0]; // Move `folder` inside the loop
-            let a = await fetch(`http://127.0.0.1:5501/songs/${folder}/info.json`);
+            let a = await fetch(`http://127.0.0.1:5502/songs/${folder}/info.json`);
             let response = await a.json(); // Move `response` inside the loop
             console.log(response);
             cardContainer.innerHTML += `<div data-folder="${folder}" class="card">

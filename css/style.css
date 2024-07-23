@@ -266,7 +266,7 @@ body {
 .seekbar {
     width: 80%;
     background-color: #333;
-    padding: 1px;
+    padding: 2px;
     margin: 10px;
     position: relative;
     border-radius: 1px;
